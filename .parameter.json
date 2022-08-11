@@ -1,0 +1,20 @@
+{
+    "AlarmLevels" : ["critical"],
+    "RegEx" : "^maintainer:",
+    "ApiUrl" :  "https://api2.prismacloud.io/",
+    "IgnoreAudits" : [],
+    "PaginationOffset":  40000,
+    "PaginationMaxRecords": 60000,
+    "AlertQueryParameters": {
+        "timeType": "relative",
+        "timeAmount": "7",
+        "timeUnit": "day",
+        "detailed": false,
+        "policy.severity": "high",
+        "policy.name": "Instances exposed to network traffic from the internet",
+        "alert.status": "Open"
+    },
+    "cwp_query.filters": {
+        "Collections": ["IBM Clusters", "Mavenir Clusters"]
+    }
+}
